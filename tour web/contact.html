@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Tanzania Wonders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <a href="index.html" class="navbar__brand">Tanzania <span>Wonders</span></a>
+  <ul class="navbar__links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#destinations">Destinations</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="is-active">Contact</a></li>
+    <li><a href="#contact-form" class="btn btn--primary">Book Now</a></li>
+  </ul>
+  <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="navbar__overlay" id="navOverlay"></div>
+
+<!-- ================= PAGE HEADER ================= -->
+<header class="page-header">
+  <p class="eyebrow">Contact us</p>
+  <h1>Get in touch</h1>
+</header>
+
+<!-- ================= SECTION 1 & 2: INFO + FORM ================= -->
+<section class="section contact">
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+      <h2>Let's talk</h2>
+      <p>We'd love to help you plan your perfect adventure.</p>
+
+      <ul class="contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Arusha, Tanzania</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l4-1 2 5-2 1a12 12 0 006 6l1-2 5 2-1 4c-8 1-15-6-15-15z"/></svg>
+          <span>+255 XXX XXX XXX</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <span>info@kisangacompany.com</span>
+        </li>
+      </ul>
+
+      <div class="contact-hours">
+        <h3>Business hours</h3>
+        <p>Monday&ndash;Saturday<br>8:00 AM &ndash; 6:00 PM</p>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+255 XXX XXX XXX">
+        </div>
+        <div class="field">
+          <label for="destination">Destination of interest</label>
+          <select id="destination" name="destination">
+            <option value="">Select a destination</option>
+            <option>Serengeti National Park</option>
+            <option>Mount Kilimanjaro</option>
+            <option>Zanzibar Island</option>
+            <option>Ngorongoro Crater</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="travelDate">Travel date</label>
+          <input type="date" id="travelDate" name="travelDate">
+        </div>
+        <div class="field">
+          <label for="travelers">Number of travelers</label>
+          <input type="number" id="travelers" name="travelers" min="1" placeholder="e.g. 2">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about the trip you have in mind"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--primary">Send inquiry</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ================= SECTION 3: CTA ================= -->
+<section class="cta">
+  <div class="cta__dots"></div>
+  <div class="cta__inner">
+    <h2>Start your adventure today</h2>
+    <p>Our travel experts are ready to help you design the perfect itinerary tailored to your interests and budget. Contact us today and begin your journey through Tanzania's incredible landscapes and unforgettable experiences.</p>
+    <div class="cta__buttons">
+      <a href="#contact-form" class="btn btn--primary">Send an inquiry</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer__top">
+    <div>
+      <a href="index.html" class="footer__brand">Tanzania <span>Wonders</span></a>
+      <p class="footer__tagline">Crafting unforgettable Tanzanian adventures, from safari plains to island shores.</p>
+    </div>
+
+    <div>
+      <p class="footer__heading">Explore</p>
+      <ul class="footer__links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="#">Tour packages</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="footer__heading">Follow along</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.5c0-.87.24-1.46 1.5-1.46h1.6V4.36c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.42-3.9 4.02V10.5H8v3h2.36V21h3.14z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="#" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>Copyright &copy; 2026 Kisanga Company. All rights reserved.</p>
+    <ul class="footer__legal">
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Terms &amp; conditions</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  const overlay = document.getElementById('navOverlay');
+
+  function closeMenu() {
+    toggle.classList.remove('is-open');
+    links.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  function openMenu() {
+    toggle.classList.add('is-open');
+    links.classList.add('is-open');
+    overlay.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  toggle.addEventListener('click', () => {
+    links.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+  overlay.addEventListener('click', closeMenu);
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  window.addEventListener('resize', () => { if (window.innerWidth > 768) closeMenu(); });
+
+  document.getElementById('contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thanks! This form is a front-end demo only — connect it to a backend or a service like Formspree to actually receive messages.');
+  });
+</script>
+
+<script src="animations.js"></script>
+</body>
+</html>
